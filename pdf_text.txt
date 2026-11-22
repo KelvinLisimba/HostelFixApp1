@@ -1,0 +1,180 @@
+
+--- PAGE 1 ---
+Page 1
+TEST CASE TEMPLATE
+Mobile Applications Development Project
+4th Year – Test Design Submission
+1. Instructions
+Your test cases should be based on the project documentation you provided and the UI you 
+have already created. You are designing the tests only and are not running them yet, so 
+there is no Actual Result field.
+• Expected results (screen names, error messages, behaviour) should match your 
+project documentation and your UI.
+• Each feature should have at least one positive test case and at least one negative 
+test case.
+• Test Case IDs must be unique and follow the format MODULE_FEATURE_NNN 
+(e.g. HR_LOGIN_001).
+• Write test steps as short numbered actions, one action per step.
+• Do not fill in the Status field. Leave it blank; it will be completed during test 
+execution.
+• The Example Test Cases section is for guidance only and should not be included in 
+your submission.
+Field Guide
+Field What to write
+Test Case ID Unique ID in the format MODULE_FEATURE_NNN.
+Description One sentence starting with “Verify that…” describing exactly what 
+is being tested.
+Test Type Positive, Negative or Boundary.
+Priority High, Medium or Low, based on how critical the feature is.
+Prerequisites What must be true before the test starts.
+Test Data The exact values to be used. Write “None” if no data is needed.
+Test Steps Numbered actions the tester performs.
+Expected Result What the app should do, based on your project documentation 
+and UI.
+Post-conditions The state of the app or data after the test.
+Status Leave blank. Not to be filled in by students.
+--- PAGE 2 ---
+Page 2
+2. Project Information
+Student Name
+Student ID
+Application Name
+Target Platform e.g. Android 14 / iOS 17
+Date DD/MM/YY
+Template Version v1.0
+--- PAGE 3 ---
+Page 3
+EXAMPLE TEST CASES
+For guidance only – not included in submission
+These examples, based on a sample health record app (MediRecord Mobile), show the level 
+of detail expected. Do not copy them into your submission.
+Example 1: Successful Patient Login
+Test Case ID HR_LOGIN_001
+Description Verify that a registered patient can log in with a valid email and 
+password.
+Test Type Positive
+Priority High
+Prerequisites App installed; patient account already registered.
+Test Data Email: patient@example.com; Password: SecurePass123
+Test Steps 1. Launch the application.
+2. Enter the registered email and correct password.
+3. Tap the “Login” button.
+Expected Result User is taken to the Patient Dashboard; the patient’s name and 
+profile photo are displayed.
+Post-conditions A user session is created and the patient remains logged in.
+Status
+Example 2: Login with Incorrect Password
+Test Case ID HR_LOGIN_002
+Description Verify that login fails when a registered email is entered with an 
+incorrect password.
+Test Type Negative
+Priority High
+Prerequisites App installed; patient account already registered.
+Test Data Email: patient@example.com; Password: WrongPass
+Test Steps 1. Launch the application.
+2. Enter the registered email and an incorrect password.
+3. Tap the “Login” button.
+Expected Result Error message “Invalid email or password” is shown; user remains 
+on the Login screen.
+Post-conditions No session is created; the password field is cleared.
+Status
+--- PAGE 4 ---
+Page 4
+Example 3: Login with Unregistered Email
+Test Case ID HR_LOGIN_003
+Description Verify that login fails when an email that is not registered is 
+entered.
+Test Type Negative
+Priority High
+Prerequisites App installed; the email used is not registered in the system.
+Test Data Email: unknown@example.com; Password: SecurePass123
+Test Steps 1. Launch the application.
+2. Enter an unregistered email and any password.
+3. Tap the “Login” button.
+Expected Result Error message “Invalid email or password” is shown; user remains 
+on the Login screen.
+Post-conditions No session is created.
+Status
+Example 4: Login with Empty Fields
+Test Case ID HR_LOGIN_004
+Description Verify that login is blocked when both the email and password 
+fields are empty.
+Test Type Negative
+Priority Medium
+Prerequisites App installed.
+Test Data Email: (empty); Password: (empty)
+Test Steps 1. Launch the application.
+2. Leave both fields empty.
+3. Tap the “Login” button.
+Expected Result Error message “Please fill all fields” is shown; user remains on the 
+Login screen.
+Post-conditions No login request is sent; no session is created.
+Status
+Example 5: Login with Email Only
+Test Case ID HR_LOGIN_005
+Description Verify that login is blocked when the email is entered but the 
+password field is empty.
+--- PAGE 5 ---
+Page 5
+Test Type Negative
+Priority Medium
+Prerequisites App installed.
+Test Data Email: patient@example.com; Password: (empty)
+Test Steps 1. Launch the application.
+2. Enter the email and leave the password field empty.
+3. Tap the “Login” button.
+Expected Result Error message “Please fill all fields” is shown; user remains on the 
+Login screen.
+Post-conditions No login request is sent; no session is created.
+Status
+Example 6: Login with Password Only
+Test Case ID HR_LOGIN_006
+Description Verify that login is blocked when the password is entered but the 
+email field is empty.
+Test Type Negative
+Priority Medium
+Prerequisites App installed.
+Test Data Email: (empty); Password: SecurePass123
+Test Steps 1. Launch the application.
+2. Leave the email field empty and enter a password.
+3. Tap the “Login” button.
+Expected Result Error message “Please fill all fields” is shown; user remains on the 
+Login screen.
+Post-conditions No login request is sent; no session is created.
+Status
+Example 7: View Medical History
+Test Case ID HR_VIEW_001
+Description Verify that a logged-in patient can view their past visits and the 
+details of a selected visit.
+Test Type Positive
+Priority High
+Prerequisites Patient is logged in; at least one past visit exists for the patient.
+--- PAGE 6 ---
+Page 6
+Test Data Patient account with one recorded visit (e.g. 12/03/26, Dr. Banda, 
+Malaria).
+Test Steps 1. From the Dashboard, tap “Medical History”.
+2. Select a past visit from the list.
+Expected Result A list of past visits appears; the selected visit shows the diagnosis, 
+doctor’s name, date and clinical notes.
+Post-conditions No data is changed; the patient can return to the list.
+Status
+--- PAGE 7 ---
+Page 7
+TEST CASES
+Write your test cases in this section
+Copy the table below for each test case you write and number your test cases in order (Test 
+Case 1, Test Case 2, …).
+Test Case 1: [Title]
+Test Case ID
+Description
+Test Type Positive / Negative / Boundary
+Priority High / Medium / Low
+Prerequisites
+Test Data
+Test Steps 1.
+2.
+3.
+Expected Result
+Post-conditions
+Status

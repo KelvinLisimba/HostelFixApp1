@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380996188245",
+    "project_id": "hostelfixapp-b8c70",
+    "storage_bucket": "hostelfixapp-b8c70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380996188245:android:26c36e089081f71a877cdc",
+        "android_client_info": {
+          "package_name": "com.example.hostelfixapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvkuL-0HqAwQqEiYYZFCGzMPy4VWDJFQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
